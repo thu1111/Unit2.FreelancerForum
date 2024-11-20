@@ -1,4 +1,4 @@
-const starter =[
+const people =[
     {name: "Alice", occupation: "Writer", price: 30},
     {name: "Bob", occupation: "Teacher", price: 50},
     {name: "Catherine", occupation: "Nurse", price: 60},
@@ -12,10 +12,13 @@ const starter =[
     {name: "Kelly", occupation: "Composer", price: 50},
 ];
 
-const freelancers = [];
+const freelancers = [
+    {name: "Alice", occupation: "Writer", price: 30},
+    {name: "Bob", occupation: "Teacher", price: 50},
+];
 
 function addRandomFreelancers() {
-    const freelancer = starter[Math.floor(Math.random()*starter.length)];
+    const freelancer = people[Math.floor(Math.random()*people.length)];
     freelancers.push(freelancer);
 }
 
